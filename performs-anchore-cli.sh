@@ -5,7 +5,7 @@ set -e
 export ANCHORE_CLI_URL=http://localhost:8228/v1
 export ANCHORE_CLI_USER=admin
 export ANCHORE_CLI_PASS=foobar
-export IMAGE_NAME=alpine:3.7
+export IMAGE_NAME=kowpun123/sample:latest
 
 echo "For more details, please check at https://github.com/anchore/anchore-cli"
 

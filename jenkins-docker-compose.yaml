@@ -11,9 +11,13 @@ networks:
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts
+    image: jenkins-devsecops
+    build:
+      dockerfile: jenkins.dockerfile
+      context: .
     ports:
       - "5555:8080"
       - "50000:50000"
     volumes:
       - "jenkins-db-volume:/var/jenkins_home"
+      - "/var/run/docker.sock:/var/run/docker.sock"
